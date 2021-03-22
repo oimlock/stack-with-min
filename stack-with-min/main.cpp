@@ -1,14 +1,6 @@
-#define _USE_MATH_DEFINES
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
-#include <utility>
-#include <cmath>
-#include <cstdlib>
-#include <iomanip>
-#include <vector>
-#include <algorithm>
-#include <stack>
 
 using namespace std;
 
