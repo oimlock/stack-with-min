@@ -1,54 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
+#include "StackWithMin.h"
 
 using namespace std;
-
-struct Node {
-    int value;
-    Node* next;
-
-    Node(int value = 0) : value(value), next(nullptr) {}
-};
-
-class Stack {
-public:
-    Stack() : begin_(nullptr) {}
-
-    ~Stack() {
-        Node* p = begin_;
-        while (p != nullptr) {
-            Node* next_p = p->next;
-            p = next_p;
-        }
-    }
-
-    bool empty() const {
-        return begin_ == nullptr;
-    }
-
-    void push(int x) {
-        Node* new_node = new Node(x);
-        new_node->next = begin_;
-        begin_ = new_node;
-
-    }
-
-    void pop() {
-        Node* p = begin_;
-        begin_ = begin_->next;
-
-        delete p;
-    }
-
-    int top() const {
-        return begin_->value;
-    }
-
-private:
-    Node* begin_;
-
-};
 
 int main() {
     freopen("input.txt", "r", stdin);
