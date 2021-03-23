@@ -9,12 +9,12 @@ int main() {
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 
-    Stack st;
+    oimlock::Stack st;
 
     int n;
     int op;
 
-    Stack st_min;
+    oimlock::Stack st_min;
     st_min.push(100001);
 
     cin >> n;
