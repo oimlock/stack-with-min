@@ -4,9 +4,10 @@ namespace oimlock {
 
 struct Node {
     int value;
+    int current_min;
     Node* next;
 
-    Node(int value = 0);
+    Node(int value, int current_min);
 };
 
 class Stack {
@@ -17,6 +18,7 @@ public:
     void push(int x);
     void pop();
     int top() const;
+    int min() const;
 
 private:
     Node* begin_;
