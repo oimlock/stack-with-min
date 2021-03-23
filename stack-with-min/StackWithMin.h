@@ -1,5 +1,7 @@
 #pragma once
 
+namespace oimlock {
+
 struct Node {
     int value;
     Node* next;
@@ -19,3 +21,5 @@ public:
 private:
     Node* begin_;
 };
+
+}  // namespace oimlock

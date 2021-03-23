@@ -1,5 +1,7 @@
 #include "StackWithMin.h"
 
+namespace oimlock {
+
 Node::Node(int value) : value(value), next(nullptr) {}
 
 Stack::Stack() : begin_(nullptr) {}
@@ -33,3 +35,4 @@ int Stack::top() const {
     return begin_->value;
 }
 
+}  // namespace oimlock
