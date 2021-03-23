@@ -3,7 +3,9 @@
 #include <iostream>
 #include "StackWithMin.h"
 
-using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
 
 int main() {
     freopen("input.txt", "r", stdin);
