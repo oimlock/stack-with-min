@@ -1,5 +1,7 @@
 #pragma once
 
+namespace oimlock {
+
 struct Node {
     int value;
     int current_min;
@@ -21,3 +23,5 @@ public:
 private:
     Node* begin_;
 };
+
+}  // namespace oimlock
